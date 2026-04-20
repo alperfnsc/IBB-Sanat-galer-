@@ -1,0 +1,6 @@
+{
+  "name": "Istanbul Art Galleries Map",
+  "description": "A modern web application mapping art galleries in Istanbul using Leaflet.js, OpenStreetMap, and Geocoding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
