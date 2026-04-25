@@ -147,7 +147,17 @@ export default function MapPage() {
                 <div className="text-xs text-neutral-500">{gallery.district}</div>
               </Tooltip>
               <Popup className="custom-popup">
-                <div className="flex flex-col gap-2 min-w-[200px] p-1 font-sans">
+                <div className="flex flex-col gap-2 min-w-[200px] max-w-[280px] p-1 font-sans">
+                  {gallery.image && (
+                    <div className="w-full h-32 overflow-hidden rounded-t-lg -mt-1 -mx-1 mb-2">
+                      <img 
+                        src={gallery.image} 
+                        alt={gallery.name} 
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
+                  )}
                   <h3 className="text-base font-bold text-neutral-900 leading-tight border-b border-neutral-100 pb-2">
                     {gallery.name}
                   </h3>
